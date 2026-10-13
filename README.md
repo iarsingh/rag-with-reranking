@@ -1,5 +1,12 @@
 # RAG with Reranking
 
+## Overview
+
+A RAG exercise that adds a reranking step after retrieval. Passages are ranked by how many terms they share with the question, a local stand-in for a cross-encoder reranker, and `POST /ask` answers from the ranked passages. It shows where a reranker fits in the pipeline without downloading a model or calling a hosted one.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** Intermediate RAG exercise run locally; term overlap replaces a real reranker and no hosted model is called.
+
 <!-- project-guide:start -->
 ## Project guide
 
